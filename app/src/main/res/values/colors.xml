@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2CD4E9</color>
+    <color name="colorPrimaryDark">#2CD4E9</color>
+    <color name="app_color_alpha">#502CD4E9</color>
+    <color name="colorAccent">#03131A</color>
+
+
+    <color name="bg_color">#f7f7f7</color>
+    <color name="color_light_gray">#BEBDBD</color>
+    <color name="green_new">#00A651</color>
+    <color name="black_color">#2D2D2D</color>
+    <color name="pdlg_gray">#9E9E9E</color>
+
+    <color name="white">#ffffff</color>
+    <color name="grey_low">#7F7F7F</color>
+    <color name="black">#000000</color>
+    <color name="colorwhite">#ffffff</color>
+    <color name="semiTransparentWhite">#40ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="darkBlue">#ff23283a</color>
+    <color name="new_blue">#ff3796bc</color>
+    <color name="off_white">#FCFCFC</color>
+</resources>

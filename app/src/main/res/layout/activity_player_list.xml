@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorAccent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark">
+
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:adjustViewBounds="true"
+                android:layout_centerVertical="true"
+                android:tint="@color/white"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+            <TextView
+                android:id="@+id/text_toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/_10sdp"
+                android:text="India vs New Zealand"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"></TextView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+
+            android:background="@drawable/rectangle_accent">
+
+            <Spinner
+                android:id="@+id/spinner_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/white"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_notifications"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</layout>

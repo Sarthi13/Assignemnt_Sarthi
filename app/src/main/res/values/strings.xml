@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Cricket</string>
+    <string name="msg_no_internet">Check Your Network.</string>
+    <string name="something_wrong">Something went wrong.Try again later</string>
+    <string name="your_string_here">
+         <u>View Details</u>.
+    </string>
+</resources>

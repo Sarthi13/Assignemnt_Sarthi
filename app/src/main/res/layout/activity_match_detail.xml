@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MatchDetailActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark">
+
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:adjustViewBounds="true"
+            android:layout_centerVertical="true"
+            android:tint="@color/white"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:id="@+id/text_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/_10sdp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp"></TextView>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/table_layout"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp">
+
+                <TableRow android:background="@drawable/bg_table">
+
+                    <TextView
+                        android:id="@+id/text_date"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:text="Batting"
+                        android:fontFamily="@font/monstreat_semibold"
+                        android:padding="@dimen/_10sdp"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_13sdp" />
+                </TableRow>
+
+                <TableRow android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_table"
+                        android:padding="@dimen/_10sdp"
+                        android:text="Style"
+                        android:fontFamily="@font/monstreat_semibold"
+
+                        android:textColor="#333333"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/text_style"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_table"
+                        android:padding="@dimen/_10sdp"
+                        android:fontFamily="@font/monstreat_semibold"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+                </TableRow>
+
+                <TableRow android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_table"
+                        android:padding="@dimen/_10sdp"
+                        android:text="Average"
+                        android:fontFamily="@font/monstreat_semibold"
+
+                        android:textColor="#333333"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/text_average"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_table"
+                        android:padding="@dimen/_10sdp"
+                        android:fontFamily="@font/monstreat_semibold"
+
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+                </TableRow>
+
+
+                <TableRow android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_table"
+                        android:padding="@dimen/_10sdp"
+                        android:text="Strike Rate"
+                        android:fontFamily="@font/monstreat_semibold"
+
+                        android:textColor="#333333"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/text_strike_rate"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/monstreat_semibold"
+
+                        android:background="@drawable/bg_table"
+                        android:padding="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+                </TableRow>
+
+                <TableRow android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_table"
+                        android:padding="@dimen/_10sdp"
+                        android:text="Runs"
+                        android:fontFamily="@font/monstreat_semibold"
+
+                        android:textColor="#333333"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/text_runs"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_table"
+                        android:padding="@dimen/_10sdp"
+                        android:fontFamily="@font/monstreat_semibold"
+
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+                </TableRow>
+
+
+
+
+
+
+            </TableLayout>
+
+
+
+
+
+        </LinearLayout>
+<!--//-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/table_layout1"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp">
+
+                <TableRow android:background="@drawable/bg_table">
+
+                    <TextView
+                        android:id="@+id/text_date1"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:text="Bowling"
+                        android:fontFamily="@font/monstreat_semibold"
+                        android:padding="@dimen/_10sdp"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_13sdp" />
+                </TableRow>
+
+                <TableRow android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_table"
+                        android:padding="@dimen/_10sdp"
+                        android:text="Style"
+                        android:fontFamily="@font/monstreat_semibold"
+
+                        android:textColor="#333333"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/text_style_bowling"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_table"
+                        android:padding="@dimen/_10sdp"
+                        android:fontFamily="@font/monstreat_semibold"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+                </TableRow>
+
+                <TableRow android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_table"
+                        android:padding="@dimen/_10sdp"
+                        android:text="Average"
+                        android:fontFamily="@font/monstreat_semibold"
+
+                        android:textColor="#333333"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/text_average_bowling"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_table"
+                        android:padding="@dimen/_10sdp"
+                        android:fontFamily="@font/monstreat_semibold"
+
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+                </TableRow>
+
+
+                <TableRow android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_table"
+                        android:padding="@dimen/_10sdp"
+                        android:text="Economy"
+                        android:fontFamily="@font/monstreat_semibold"
+
+                        android:textColor="#333333"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/text_economy"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/monstreat_semibold"
+
+                        android:background="@drawable/bg_table"
+                        android:padding="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+                </TableRow>
+
+                <TableRow android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_table"
+                        android:padding="@dimen/_10sdp"
+                        android:text="Wickets"
+                        android:fontFamily="@font/monstreat_semibold"
+
+                        android:textColor="#333333"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/text_wickets"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_table"
+                        android:padding="@dimen/_10sdp"
+                        android:fontFamily="@font/monstreat_semibold"
+
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+                </TableRow>
+
+
+
+
+
+
+            </TableLayout>
+
+
+
+
+
+        </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
+</layout>

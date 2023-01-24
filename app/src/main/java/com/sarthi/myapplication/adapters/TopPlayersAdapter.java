@@ -62,7 +62,6 @@ public class TopPlayersAdapter extends RecyclerView.Adapter<TopPlayersAdapter.To
         //holder.playerPosition.setText(topPlayersdataitems.get(position).getPosition());
         holder.playerPosition.setText("#"+String.valueOf(position+1));
 
-
         if (topPlayersdataitems.get(position).getIscaptain()!=null)
         {
             if (topPlayersdataitems.get(position).getIscaptain().equalsIgnoreCase("true"))
